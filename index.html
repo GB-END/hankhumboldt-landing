@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Old-Timer's Home Grow Manual — 101 Old-School Methods, Seed to Jar</title>
+<meta name="description" content="Stop paying $60 an eighth. Grow it for about $2 — 101 old-school methods, seed to jar, from a grower with 49 seasons on the same ground. One eighth you don't buy pays for this book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<style>
+:root{
+  --forest:#16241A; --forest2:#1B2E20; --panel:#203527;
+  --cream:#F8F2DF; --cream2:#E4DBC0;
+  --gold:#C89B4B; --gold2:#E9C87E;
+  --rust:#7A1F0E; --rust2:#5A1308;
+  --ink:#0F0C07;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Fraunces',Georgia,serif;color:var(--cream);background:var(--forest);font-size:18px;line-height:1.6}
+.mono{font-family:'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.dark{background:#111C13;color:var(--cream)}
+.paper2{background:var(--forest2)}
+
+/* ===== MASTHEAD ===== */
+.masthead{position:fixed;top:0;left:0;right:0;height:52px;background:#0E1810;color:var(--gold2);z-index:99;display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;border-bottom:1px solid #2A3B2D}
+.masthead .count{color:var(--gold2);font-weight:700}
+@media(max-width:800px){.masthead .right{display:none}.masthead{font-size:9px}}
+
+/* ===== HERO ===== */
+.hero{padding:130px 0 70px}
+.hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.22em;color:var(--gold2);text-transform:uppercase;margin-bottom:18px}
+.kicker b{color:var(--gold)}
+h1{color:var(--cream);font-weight:600;font-size:clamp(34px,4.2vw,56px);line-height:1.08;letter-spacing:-.01em}
+h1 em{color:var(--gold2);font-style:italic;font-weight:400}
+.hero .sub{margin:26px 0 8px;font-size:20px;line-height:1.55;color:#DBD5BF}
+.hero .sub::first-letter{font-size:3.2em;float:left;line-height:.82;padding:4px 10px 0 0;color:var(--gold);font-weight:600}
+.hero .sub b{color:var(--cream)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0 26px}
+.btn{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding:16px 28px;text-decoration:none;border:1px solid var(--gold);cursor:pointer}
+.btn-solid{background:#F0CD82;color:#181005;border:2px solid #F0CD82;font-weight:700}
+.btn-solid:hover{background:#FFE29A;border-color:#FFE29A}
+.btn-line{background:transparent;color:var(--gold2)}
+.btn-line:hover{background:rgba(212,176,112,.1)}
+.btn-gold{background:#F0CD82;border-color:#F0CD82;color:#18100E;font-weight:700}
+.proof{display:flex;gap:0;border-top:1px solid #35493A;border-bottom:1px solid #35493A}
+.proof div{flex:1;padding:14px 8px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#A8B5A0}
+.proof div b{display:block;font-size:15px;color:var(--gold2);margin-bottom:2px}
+.proof div + div{border-left:1px solid #35493A}
+.portrait-frame{background:#F2EBD4;padding:14px 14px 18px;box-shadow:0 18px 40px rgba(0,0,0,.45);border:1px solid #3A4E3C;position:relative;transform:rotate(.6deg)}
+.portrait-frame img{width:100%;display:block}
+.portrait-cap{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;color:#6E6650;margin-top:12px;text-transform:uppercase}
+.quote-card{position:absolute;left:-26px;bottom:36px;background:#0E1810;color:var(--cream);padding:16px 20px;max-width:280px;box-shadow:0 14px 30px rgba(0,0,0,.5);border:1px solid #35493A}
+.quote-card .q{font-style:italic;font-size:16px;line-height:1.45;color:var(--cream)}
+.quote-card .a{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--gold2);margin-top:10px;text-transform:uppercase}
+@media(max-width:900px){.hero .grid{grid-template-columns:1fr}.quote-card{left:8px}}
+
+/* ===== SECTIONS ===== */
+section{padding:90px 0}
+.num{font-size:clamp(60px,7vw,96px);font-weight:300;line-height:1;color:var(--gold);font-style:italic}
+.sec-label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);margin:6px 0 10px}
+h2{font-weight:600;font-size:clamp(28px,3.4vw,44px);line-height:1.15;letter-spacing:-.01em;color:var(--cream)}
+.sec-head{margin-bottom:44px}
+
+/* ===== MANUAL / OFFER ===== */
+.offer-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.book3d{position:relative;max-width:420px;margin:6px auto 0}
+.book3d img{width:100%;display:block;box-shadow:22px 26px 0 rgba(0,0,0,.28),0 30px 60px rgba(0,0,0,.5);border:1px solid #3A4E3C}
+.book3d::before{content:"";position:absolute;top:0;bottom:0;left:-13px;width:13px;background:linear-gradient(90deg,#0E1408,#20301A 55%,#0E1408)}
+.book3d-cap{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;color:#A8B5A0;text-align:center;margin-top:22px;text-transform:uppercase}
+.ecap{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--gold2);text-transform:uppercase;margin-bottom:14px}
+.offer-grid p.body{color:#DBD5BF;margin-bottom:22px}
+.price-line{display:flex;align-items:baseline;gap:14px;margin:10px 0 2px}
+.price-now{font-size:56px;font-weight:600;color:var(--gold2)}
+.price-was{font-size:24px;color:#A9B6A1;text-decoration:line-through}
+.launch{display:inline-block;background:#F0CD82;color:#181005;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;padding:5px 12px;text-transform:uppercase;margin-bottom:26px}
+table.stack{width:100%;border-collapse:collapse;margin:18px 0 20px;background:var(--panel);border:1px solid #3A4E3C}
+table.stack td{padding:12px 14px;border-bottom:1px solid #2E4231;font-size:16px;vertical-align:top;color:var(--cream)}
+table.stack td:last-child{text-align:right;font-family:'JetBrains Mono',monospace;white-space:nowrap;color:var(--gold2)}
+table.stack td .d{display:block;font-size:13px;color:#A8B5A0;font-style:italic}
+table.stack tr.total td{border-bottom:none;background:#263C2B;font-weight:600;color:var(--cream)}
+table.stack tr.total td:last-child{color:var(--gold2)}
+.micro{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;color:#A8B5A0;margin-top:12px;text-transform:uppercase}
+@media(max-width:900px){.offer-grid{grid-template-columns:1fr}}
+
+/* ===== MATH ===== */
+.math-note{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--gold2);text-transform:uppercase;margin-bottom:30px}
+.math-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.math-card{border:1px solid #3A4E3C;padding:30px 30px 24px;background:var(--panel)}
+.math-card h3{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:var(--gold2);text-transform:uppercase;margin-bottom:20px;font-weight:500}
+.mrow{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dotted #3A4E3C;font-size:16px;color:#E0DAC4}
+.mrow .n{color:var(--cream);font-weight:600;white-space:nowrap}
+.mrow .m{color:#A8B5A0;font-style:italic;font-size:14px}
+.mrow.total{border-bottom:none;border-top:2px solid #3A4E3C;margin-top:6px;padding-top:16px}
+.mrow.total .n{font-size:24px;color:var(--gold2)}
+.savings{margin-top:34px;border-left:4px solid var(--gold);padding:18px 24px;background:var(--panel)}
+.savings .big{font-size:clamp(22px,2.6vw,30px);font-weight:600;color:var(--cream)}
+.savings .big b{color:var(--gold2)}
+.src{font-size:13px;color:#A8B5A0;margin-top:26px;font-style:italic}
+@media(max-width:900px){.math-grid{grid-template-columns:1fr}}
+
+/* ===== WHAT'S INSIDE ===== */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:var(--panel);border:1px solid #3A4E3C;padding:26px 28px}
+.card .cl{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;color:var(--gold2);text-transform:uppercase}
+.card h3{font-size:21px;font-weight:600;margin:8px 0 14px;line-height:1.3;color:var(--cream)}
+.card ol{list-style:none;counter-reset:m}
+.card ol li{counter-increment:m;padding:7px 0 7px 40px;position:relative;font-size:15.5px;border-bottom:1px dotted #35493A;color:#E0DAC4}
+.card ol li:last-child{border-bottom:none}
+.card ol li::before{content:counter(m,decimal-leading-zero);position:absolute;left:0;top:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold)}
+@media(max-width:900px){.cards{grid-template-columns:1fr}}
+
+/* ===== STORIES ===== */
+.stories{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+.story{background:var(--panel);border:1px solid #3A4E3C;padding:28px;position:relative}
+.story .qm{font-size:60px;line-height:.6;color:var(--gold);font-family:Georgia,serif}
+.story p{font-style:italic;font-size:16.5px;color:#E0DAC4;margin:14px 0 18px}
+.story .who{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;color:var(--gold2);text-transform:uppercase}
+.story-note{margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#A8B5A0;text-transform:uppercase}
+@media(max-width:900px){.stories{grid-template-columns:1fr}}
+
+/* ===== ABOUT ===== */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.about-grid .imgframe{background:#F2EBD4;padding:12px;box-shadow:0 18px 40px rgba(0,0,0,.45);border:1px solid #3A4E3C;transform:rotate(-.7deg)}
+.about-grid img{width:100%;display:block}
+.about-grid p.body{color:#DBD5BF;margin-bottom:18px}
+.qbox{border-left:4px solid var(--gold);background:var(--panel);padding:18px 24px;margin:24px 0;font-style:italic;font-size:19px;color:var(--cream)}
+.watch{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);text-decoration:none;border-bottom:1px solid var(--gold)}
+.disclosure{margin-top:26px;font-size:13px;color:#A8B5A0;font-style:italic}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}}
+
+/* ===== ORDER ===== */
+.order-box{max-width:760px;margin:0 auto;text-align:center}
+.order-box .big{font-size:clamp(26px,3vw,38px);font-weight:600;margin-bottom:18px;color:var(--cream)}
+.order-box p.body{color:#DBD5BF;margin-bottom:26px}
+.order-price{display:flex;justify-content:center;align-items:baseline;gap:16px;margin-bottom:8px}
+.secure{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;color:#A8B5A0;margin-top:16px;text-transform:uppercase}
+
+/* ===== FAQ ===== */
+.faq{max-width:820px;margin:0 auto}
+.faq details{border-bottom:1px solid #35493A;padding:6px 0}
+.faq summary{cursor:pointer;padding:16px 4px;font-size:19px;font-weight:600;list-style:none;position:relative;color:var(--cream)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:12px;font-size:26px;color:var(--gold2);font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 40px 20px 4px;color:#DBD5BF}
+
+/* ===== LAST CALL ===== */
+.lastcall{background:linear-gradient(160deg,var(--rust2) 0%,#12200F 55%,var(--forest) 100%);color:var(--cream);text-align:center;padding:110px 0}
+.lastcall .lc{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.3em;color:var(--gold2);text-transform:uppercase;margin-bottom:20px}
+.lastcall h2{max-width:820px;margin:0 auto 30px}
+.lastcall .sub1{color:#DBD5BF;margin-bottom:34px;font-size:18px}
+
+/* ===== FOOTER ===== */
+footer{background:#0E1810;color:#A8B5A0;padding:44px 0 60px;font-size:13px}
+footer .cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+footer .legal{margin-top:30px;font-style:italic;line-height:1.7;color:#7C8A78}
+
+/* ===== EXIT MODAL ===== */
+.modal-backdrop{position:fixed;inset:0;background:rgba(8,14,9,.7);backdrop-filter:blur(2px);z-index:80;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .35s ease}
+.modal-backdrop.is-show{opacity:1;pointer-events:auto}
+.exitmodal{background:var(--forest2);border:1px solid var(--gold);max-width:480px;width:100%;padding:40px 40px 34px;text-align:center;position:relative;box-shadow:0 40px 90px rgba(0,0,0,.6);transform:translateY(14px) scale(.98);transition:transform .4s cubic-bezier(.16,.84,.27,1)}
+.modal-backdrop.is-show .exitmodal{transform:translateY(0) scale(1)}
+.exitmodal__close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:22px;color:#A8B5A0;cursor:pointer;font-family:Georgia,serif;line-height:1}
+.exitmodal__close:hover{color:var(--gold2)}
+.exitmodal__book{width:118px;margin:0 auto 20px;display:block;box-shadow:0 14px 30px rgba(0,0,0,.5);border:1px solid #3A4E3C}
+.exitmodal__kicker{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.3em;color:var(--gold2);text-transform:uppercase;margin-bottom:16px}
+.exitmodal h3{font-size:clamp(24px,3vw,32px);font-weight:600;line-height:1.2;margin-bottom:14px;color:var(--cream)}
+.exitmodal h3 em{color:var(--gold2);font-style:italic}
+.exitmodal p{color:#DBD5BF;font-size:16.5px;margin-bottom:24px}
+.exitmodal .btn{display:block;width:100%;text-align:center;font-size:13px}
+.exitmodal__alt{display:inline-block;margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;color:#A8B5A0;text-transform:uppercase;text-decoration:none}
+.exitmodal__alt b{color:var(--gold2);border-bottom:1px solid var(--gold);font-weight:500}
+
+/* ===== mobile ===== */
+@media(max-width:640px){
+  body{font-size:16.5px}
+  .wrap{padding:0 20px}
+  .cta-row .btn{width:100%;text-align:center;padding:18px 20px}
+  .btn{padding:16px 20px}
+  .proof{flex-direction:column}
+  .proof div{padding:10px 8px}
+  .proof div + div{border-left:none;border-top:1px solid #35493A}
+  .hero{padding-top:96px}
+  .quote-card{position:static;margin-top:14px;max-width:none}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <span>EMERALD TRIANGLE &middot; EST. 1977</span>
+  <span class="count">LAUNCH PRICE ENDS IN <span id="countdown">--:--:--</span></span>
+  <span class="right">A GROWER'S MANUAL &middot; NO. I</span>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap grid">
+    <div>
+      <div class="kicker"><b>HANK HUMBOLDT</b> — AN ALMANAC</div>
+      <h1>The old methods that kept me <em>off the dispensary shelf.</em></h1>
+      <p class="sub">Stop paying $60 an eighth. Grow it for about <b>$2</b> — <b>101 old-school methods, seed to jar</b>, from a grower with 49 seasons on the same ground. 570+ pages, illustrated. <b>One eighth you don't buy pays for this book.</b></p>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="#manual">See the manual →</a>
+        <a class="btn btn-line" href="#math">Read the math →</a>
+      </div>
+      <div class="proof">
+        <div><b>49 seasons</b>same ground, since '77</div>
+        <div><b>101 methods</b>seed to jar</div>
+        <div><b>7-day</b>money-back refund</div>
+      </div>
+    </div>
+    <div style="position:relative">
+      <div class="portrait-frame">
+        <img src="img/hank.jpg" alt="Hank Humboldt at his workbench">
+        <div class="portrait-cap">HANK AT THE BENCH &middot; EMERALD TRIANGLE</div>
+        <div class="quote-card">
+          <div class="q">“Not a shortcut. The old way, written down.”</div>
+          <div class="a">— Hank Humboldt &middot; Emerald Triangle</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- I. THE MANUAL -->
+<section id="manual">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">I.</div>
+      <div class="sec-label">The Manual</div>
+      <h2>One book. One hundred one methods.<br>Three thousand dollars a year.</h2>
+    </div>
+    <div class="offer-grid">
+      <div>
+        <div class="book3d"><img src="img/book.png" alt="The Old-Timer's Home Grow Manual — book cover"></div>
+        <div class="book3d-cap">Illustrated ebook &middot; 570+ pages &middot; first edition</div>
+      </div>
+      <div>
+        <div class="ecap">Illustrated ebook &middot; 570+ pages &middot; 2026</div>
+        <p class="body">Every step from seed to jar, the way it was done before the shelves existed: law and timeline, the kit, soil, water, feeding, environment, training, flowering, harvest, dry and cure, problems and pests. Every method carries the materials list, 2026 prices, step-by-step instructions, a dated note from Hank's own notebooks, and <em>the honest part</em> — what the method does and does not do. Start this weekend with a $10 thermometer and a bag of soil.</p>
+        <div class="price-line"><span class="price-now">$47</span><span class="price-was">$77</span></div>
+        <span class="launch">Launch price — ends Sunday</span>
+        <table class="stack">
+          <tr><td>The Old-Timer's Home Grow Manual<span class="d">101 methods · seed to jar · illustrated</span></td><td>$47</td></tr>
+          <tr><td>The First-Weekend Road Map<span class="d">the three cheap fixes to make before anything else</span></td><td>$19</td></tr>
+          <tr><td>The Grow Ledger workbook<span class="d">track what your grow actually costs, to the penny</span></td><td>$19</td></tr>
+          <tr><td>The Kit &amp; Sourcing Sheet<span class="d">what to buy where — zero seed vendors</span></td><td>$14</td></tr>
+          <tr><td>Plant-in-Trouble quick cards<span class="d">the bench cards for the twelve worst weeks</span></td><td>$14</td></tr>
+          <tr><td>Lifetime updates<span class="d">new editions, free forever</span></td><td>$21</td></tr>
+          <tr class="total"><td>Total value</td><td>$134</td></tr>
+        </table>
+        <p style="margin-bottom:20px;font-size:17px"><em>You pay today <b style="color:var(--rust);font-size:22px">$47</b>.</em></p>
+        <a class="btn btn-solid" href="https://hankhumboltd.gumroad.com/l/diybh">Get the manual →</a>
+        <div class="micro">Instant access · Pay once · Yours forever</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- II. THE MATH -->
+<section id="math" class="dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">II.</div>
+      <div class="sec-label">The Math</div>
+      <h2>What you spend at the counter.<br>And what you can stop paying.</h2>
+    </div>
+    <div class="math-note">Pull up your receipts before you read this.</div>
+    <div class="math-grid">
+      <div class="math-card">
+        <h3>Buying at the counter — per year</h3>
+        <div class="mrow"><span>One $60 eighth a week, 52 weeks</span><span class="n">$3,120</span></div>
+        <div class="mrow"><span>The drive, the minimum card, the upsells by the register</span><span class="n">you know it</span></div>
+        <div class="mrow"><span>Every harvest out of your hands</span><span class="n">priceless, in the bad way</span></div>
+        <div class="mrow total"><span>Year at the counter</span><span class="n">$3,120+</span></div>
+      </div>
+      <div class="math-card">
+        <h3>The same habit, grown at home</h3>
+        <div class="mrow"><span>Starter kit: light, tent, air, pots, soil <span class="m">(M. 10–25)</span></span><span class="n">~$400</span></div>
+        <div class="mrow"><span>Each eighth after the kit: light, soil, water <span class="m">(M. 42–49)</span></span><span class="n">~$2</span></div>
+        <div class="mrow"><span>A year of home eighths</span><span class="n">~$104</span></div>
+        <div class="mrow total"><span>Year one, everything in</span><span class="n">~$504</span></div>
+      </div>
+    </div>
+    <div class="savings">
+      <div class="big">First-year savings: <b>~$2,600</b>. Every year after: <b>~$3,000</b>.<br>One eighth you don't buy pays for this book.</div>
+    </div>
+    <p class="src">Numbers assume a $60 eighth and one a week — your counter may charge more. Every number has a chapter in the Manual.</p>
+  </div>
+</section>
+
+<!-- III. WHAT'S INSIDE -->
+<section class="paper2" id="inside">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">III.</div>
+      <div class="sec-label">What's Inside</div>
+      <h2>Exactly what you get for $47.</h2>
+      <p class="body" style="max-width:760px;color:#D5CFB9;margin-top:16px">Twelve sections, 101 methods. Every method follows the same mold: <b>what it solves</b>, <b>what you'll need</b> (with 2026 prices), <b>step by step</b>, a dated note from Hank's seasons, <b>the honest part</b> — and a safety note where one belongs. Find your problem on the list. It has a chapter.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><span class="cl">I. Before You Plant — 9 methods</span><h3>Know the ground before you dig.</h3><ol>
+        <li>Check the law where you live — first, always</li>
+        <li>Indoor, outdoor, or a window that works</li>
+        <li>The honest timeline: 3–5 months, no magic</li>
+        <li>The real cost ledger — before you spend a dollar</li>
+        <li>Tent vs. the homemade box that costs more</li>
+        <li>Smell, and being a good neighbor</li></ol></div>
+      <div class="card"><span class="cl">II. The Kit — 8 methods</span><h3>Everything worth owning costs less than you fear.</h3><ol>
+        <li>Lights: what actually matters, in watts</li>
+        <li>The hand test for light distance</li>
+        <li>The $10 thermometer-hygrometer</li>
+        <li>The $8 loupe, pH strips, and what you don't need</li></ol></div>
+      <div class="card"><span class="cl">III. Soil &amp; Containers — 8 methods</span><h3>Dirt is a kitchen, not a parking lot.</h3><ol>
+        <li>Reading a bag of soil like a grocery label</li>
+        <li>The old-school living soil mix</li>
+        <li>Fabric vs. plastic, pot size, saucers</li>
+        <li>Reusing old soil without guessing</li></ol></div>
+      <div class="card"><span class="cl">IV. Seeds &amp; Starts — 8 methods</span><h3>A seed wants three things, not nine products.</h3><ol>
+        <li>What a good seed looks like</li>
+        <li>The paper-towel start, step by step</li>
+        <li>Planting depth — the finger rule</li>
+        <li>Leggy seedlings and damping-off, caught early</li></ol></div>
+      <div class="card"><span class="cl">V. Water — 8 methods</span><h3>More first grows die of love than of thirst.</h3><ol>
+        <li>Lift the pot: the free moisture meter</li>
+        <li>The chopstick from the kitchen drawer</li>
+        <li>Drowning vs. thirsty — the three signs</li>
+        <li>pH without the panic</li></ol></div>
+      <div class="card"><span class="cl">VI. Feeding — 8 methods</span><h3>The soil already eats. Most bottles are rent.</h3><ol>
+        <li>Reading N-P-K in plain words</li>
+        <li>The half-strength rule</li>
+        <li>Nutrient burn: the claw, the tips</li>
+        <li>The $3 fixes — and the bottles you don't need</li></ol></div>
+      <div class="card"><span class="cl">VII. Environment — 8 methods</span><h3>The room decides more than the bottle does.</h3><ol>
+        <li>Temperature and humidity by stage</li>
+        <li>VPD in plain words, no spreadsheet</li>
+        <li>Air movement and the ribbon test</li>
+        <li>Heat waves, cold garages, light leaks</li></ol></div>
+      <div class="card"><span class="cl">VIII. Growing &amp; Training — 9 methods</span><h3>Bend the plant before you fight it.</h3><ol>
+        <li>Topping: the node, the pause, the cut</li>
+        <li>Low-stress training with string and patience</li>
+        <li>Defoliation with a light hand</li>
+        <li>When to flip to 12/12 — and the stretch</li></ol></div>
+      <div class="card"><span class="cl">IX. Flowering — 8 methods</span><h3>The eight weeks that decide the jar.</h3><ol>
+        <li>Spotting males before they cost you</li>
+        <li>Flower week by week, no guesswork</li>
+        <li>Preventing bud rot before it starts</li>
+        <li>Why buds come out small — the honest causes</li></ol></div>
+      <div class="card"><span class="cl">X. Harvest — 7 methods</span><h3>The calendar lies. The plant doesn't.</h3><ol>
+        <li>The trichome clock — the $8 loupe that tells harvest day</li>
+        <li>Why the pistils lie</li>
+        <li>Harvest day plan, wet trim vs. dry trim</li>
+        <li>Honest yield expectations</li></ol></div>
+      <div class="card"><span class="cl">XI. Dry &amp; Cure — 10 methods</span><h3>Where good flower goes to die — or doesn't.</h3><ol>
+        <li>The 60/60 dry room, cheap to build</li>
+        <li>The snap test, the hay smell: cause and cure</li>
+        <li>Jars, burping, humidity packs</li>
+        <li>The long cure and the jar ledger</li></ol></div>
+      <div class="card"><span class="cl">XII. Problems &amp; Pests — 10 methods</span><h3>Diagnose the room before you blame the plant.</h3><ol>
+        <li>The diagnosis order: environment first</li>
+        <li>The yellow-leaf map</li>
+        <li>Spider mites, fungus gnats, powdery mildew</li>
+        <li>When to start over — without shame</li></ol></div>
+    </div>
+  </div>
+</section>
+
+<!-- IV. STORIES -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">IV.</div>
+      <div class="sec-label">From the Channel</div>
+      <h2>What the first month looks like.</h2>
+    </div>
+    <div class="stories">
+      <div class="story"><div class="qm">“</div><p>Danny's first pot nearly drowned because the droop looked thirsty. One lift of the pot — thirty seconds — settles it. He never watered a wet plant again.</p><div class="who">Danny &middot; the grandson</div></div>
+      <div class="story"><div class="qm">“</div><p>Ray's shelf held eleven bottles and a feeding chart the size of a placemat. The $3 fix was reading the leaf before the shelf. His plants got calmer the day the bottles stopped.</p><div class="who">Ray &middot; the neighbor</div></div>
+      <div class="story"><div class="qm">“</div><p>Marge's grocery ledger caught Hank's "cheap" haul at honest cost in '96. The Grow Ledger in this book is her grocery book, redrawn for a garage.</p><div class="who">Marge &middot; the wife</div></div>
+    </div>
+    <div class="story-note">These are Hank's stories from the channel — not buyer reviews. Buyer reviews live on the checkout page.</div>
+  </div>
+</section>
+
+<!-- V. ABOUT -->
+<section class="paper2" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="imgframe"><img src="img/hank_ledger.jpg" alt="Hank Humboldt with his grow ledger"><div class="portrait-cap">THE LEDGER &middot; KEPT SINCE 1988</div></div>
+      <div>
+        <div class="num">V.</div>
+        <div class="sec-label">About the Author</div>
+        <h2 style="margin-bottom:24px">Hank Humboldt.</h2>
+        <p class="body">Hank came out to the Emerald Triangle in 1977 and has grown on the same ground for forty-nine seasons since. He learned from growers who never had a counter to buy from — and he has spent the years since writing down what actually holds up.</p>
+        <p class="body">He teaches his grandson Danny the same first lesson every time: <em>look before you spend</em>. The plant shows what it is doing; the shelf sells answers. This book is the difference, organized.</p>
+        <p class="body">The Old-Timer's Home Grow Manual is the channel, set down in the order you should actually do things — seed to jar, each method with its materials, its honest part, and its safety note.</p>
+        <div class="qbox">“It is not a shortcut. It is the old way, written down.”</div>
+        <a class="watch" href="https://www.youtube.com/@HankHumboldt" target="_blank" rel="noopener">—— Watch the channel</a>
+        <p class="disclosure">Disclosure: Hank Humboldt is a fictional old-school grower — an AI-generated persona. The methods are real; the face is storytelling. Educational content only.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VI. ORDER -->
+<section id="order">
+  <div class="wrap order-box">
+    <div class="sec-head">
+      <div class="num">VI.</div>
+      <div class="sec-label">Order</div>
+    </div>
+    <div class="big">$47 once. No subscription. Yours forever.</div>
+    <p class="body">Instant access — the PDF is yours within 60 seconds of purchase. Read it on any phone, tablet, or computer, or print it at the kitchen table. 7-day money-back guarantee, no forms, no interrogation. The First-Weekend Road Map alone should earn it back the same weekend.</p>
+    <div class="order-price"><span class="price-now">$47</span><span class="price-was">$77</span></div>
+    <span class="launch">Launch price — ends Sunday</span>
+    <div class="cta-row" style="justify-content:center"><a class="btn btn-solid" href="https://hankhumboltd.gumroad.com/l/diybh">Get the manual →</a></div>
+    <div class="secure">🔒 Secure checkout · Visa · Mastercard · PayPal · Apple Pay · 7-day refund</div>
+  </div>
+</section>
+
+<!-- VII. FAQ -->
+<section class="paper2" id="faq">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center">
+      <div class="num">VII.</div>
+      <div class="sec-label">Questions</div>
+      <h2>The seven everybody asks.</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Is this legal where I live?</summary><div class="a">Method 1 is checking the law where you live, before anything else. This book teaches craft for places where home growing is legal — and it says so on every page. Grow only where it's legal, of course.</div></details>
+      <details><summary>I've never grown anything. Is this for me?</summary><div class="a">It was written for you. Section I starts with the honest timeline and the real cost ledger, and the first watering mistake that kills most first grows is named in the first ten pages. If you can follow a recipe, you can follow a method.</div></details>
+      <details><summary>Do I need a tent and a big space?</summary><div class="a">No. Method 7 helps you choose the space you actually have — a closet, a corner, or outdoors where legal. Method 8 shows when the homemade box beats the tent, and when it doesn't.</div></details>
+      <details><summary>How much does it cost to start?</summary><div class="a">Section II: The Kit names every piece with 2026 prices, and the Sourcing Sheet tells you what to buy where. A working starter setup runs about $350–450 — and the Kit &amp; Sourcing Sheet (included) stops you from buying the extras you don't need.</div></details>
+      <details><summary>What format is the book?</summary><div class="a">A 570+ page illustrated PDF — photos and diagrams throughout. Read it on any phone, tablet, or computer, or print it at the kitchen table. Yours forever, lifetime updates included.</div></details>
+      <details><summary>Does this teach how to use it?</summary><div class="a">No. This is a book of craft — growing, harvest, dry, cure. It never discusses effects, potency, or anything after the jar. Old-school growers talk about the work, not the high.</div></details>
+      <details><summary>What if it's not for me?</summary><div class="a">7-day money-back guarantee, handled by Gumroad. If the book isn't what you expected, you get your $47 back — no forms, no interrogation.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- LAST CALL -->
+<section class="lastcall">
+  <div class="wrap">
+    <div class="lc">Last Call</div>
+    <h2>Stop paying $60 for something you can grow for $2.</h2>
+    <p class="sub1">101 old-school methods · 570+ pages · $47 launch price (reg. $77) · 7-day refund</p>
+    <a class="btn btn-gold" href="https://hankhumboltd.gumroad.com/l/diybh">Get the manual →</a>
+    <div class="micro" style="color:#C9BC9C;margin-top:18px">Instant access · Pay once · Yours forever</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <span>HANK HUMBOLDT &middot; A GROWER'S MANUAL</span>
+      <span>EMERALD TRIANGLE &middot; EDITION MMXXVI &middot; NO. I</span>
+      <span><a href="https://hankhumboltd.gumroad.com/l/diybh" style="color:#D4B070">GET THE MANUAL</a></span>
+    </div>
+    <p class="legal">For adults 21+. Educational content only — grow only where it's legal, of course. This book teaches cultivation craft; it does not discuss effects, potency, or use. Hank Humboldt is a fictional AI-generated persona; the methods are the product. Nothing here endorses illegal activity. No seed vendors are promoted. Results vary with climate, space, and care.</p>
+  </div>
+</footer>
+
+<!-- EXIT MODAL -->
+<div class="modal-backdrop" id="exitmodal-bk" aria-hidden="true">
+  <div class="exitmodal" role="dialog" aria-modal="true" aria-label="Before you go">
+    <button class="exitmodal__close" id="exitmodal-x" aria-label="Close">&times;</button>
+    <img class="exitmodal__book" src="img/book.png" alt="The Old-Timer's Home Grow Manual">
+    <div class="exitmodal__kicker">Wait — one thing</div>
+    <h3>Earn the <em>$47</em> back this month.</h3>
+    <p>The first $60 eighth you don't buy covers the book. 101 old-school methods, seed to jar — and a 7-day refund if it's not for you.</p>
+    <a class="btn btn-solid" href="https://hankhumboltd.gumroad.com/l/diybh">Get the manual →</a>
+    <a class="exitmodal__alt" id="exitmodal-alt" href="#inside">or <b>see what's inside →</b></a>
+  </div>
+</div>
+
+<script>
+// Launch countdown: ends Sunday 23:59:59 local, auto-renews weekly
+function nextSunday(){const d=new Date();d.setHours(23,59,59,0);const day=d.getDay();if(day===0&&new Date().getHours()<23){}else{d.setDate(d.getDate()+((7-day)%7||7));}return d;}
+let end=nextSunday();
+function tick(){
+  let ms=end-new Date();
+  if(ms<0){end=nextSunday();ms=end-new Date();}
+  const h=String(Math.floor(ms/3600000)).padStart(2,'0');
+  const m=String(Math.floor(ms%3600000/60000)).padStart(2,'0');
+  const s=String(Math.floor(ms%60000/1000)).padStart(2,'0');
+  document.getElementById('countdown').textContent=h+':'+m+':'+s;
+}
+tick();setInterval(tick,1000);
+
+// ===== EXIT-INTENT MODAL (once per visitor per session; needs 45s dwell) =====
+(function(){
+  const MIN_DWELL=45000;
+  const loadedAt=Date.now();
+  const bk=document.getElementById('exitmodal-bk');
+  const x=document.getElementById('exitmodal-x');
+  const alt=document.getElementById('exitmodal-alt');
+  if(!bk)return;
+  function dwellOk(){return Date.now()-loadedAt>=MIN_DWELL;}
+  function show(){
+    if(sessionStorage.getItem('exitmodalSeen'))return;
+    if(!dwellOk())return;
+    bk.classList.add('is-show');
+    sessionStorage.setItem('exitmodalSeen','1');
+  }
+  function hide(){bk.classList.remove('is-show');}
+  x.addEventListener('click',hide);
+  bk.addEventListener('click',e=>{if(e.target===bk)hide();});
+  alt.addEventListener('click',hide);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')hide();});
+  // desktop: mouse leaves toward the top (exit intent), only after dwell
+  document.addEventListener('mouseout',function(e){
+    if(!e.relatedTarget&&e.clientY<=0)show();
+  });
+  // mobile/no-mouse fallback: deep scroll (75% of page) after dwell
+  window.addEventListener('scroll',function(){
+    const max=document.documentElement.scrollHeight-window.innerHeight;
+    if(max>0&&window.scrollY/max>=0.75)show();
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
