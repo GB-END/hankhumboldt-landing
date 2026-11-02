@@ -27,8 +27,9 @@ a{color:inherit}
 .paper2{background:var(--forest2)}
 
 /* ===== MASTHEAD ===== */
-.masthead{position:fixed;top:0;left:0;right:0;height:52px;background:#0E1810;color:var(--gold2);z-index:99;display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;border-bottom:1px solid #2A3B2D}
+.masthead{position:fixed;top:0;left:0;right:0;height:52px;background:#0A120C;color:var(--cream);z-index:99;display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.12em;border-bottom:1px solid #C89B4B}
 .masthead .count{color:var(--gold2);font-weight:700}
+.masthead #countdown{background:#E9C87E;color:#0A120C;padding:3px 8px;border-radius:3px;margin-left:6px}
 @media(max-width:800px){.masthead .right{display:none}.masthead{font-size:9px}}
 
 /* ===== HERO ===== */
@@ -258,7 +259,7 @@ footer .legal{margin-top:30px;font-style:italic;line-height:1.7;color:#7C8A78}
           <tr><td>Lifetime updates<span class="d">new editions, free forever</span></td><td>$21</td></tr>
           <tr class="total"><td>Total value</td><td>$134</td></tr>
         </table>
-        <p style="margin-bottom:20px;font-size:17px"><em>You pay today <b style="color:var(--rust);font-size:22px">$47</b>.</em></p>
+        <p style="margin-bottom:20px;font-size:17px"><em>You pay today <b style="color:var(--gold2);font-size:22px">$47</b>.</em></p>
         <a class="btn btn-solid" href="https://hankhumboltd.gumroad.com/l/diybh">Get the manual →</a>
         <div class="micro">Instant access · Pay once · Yours forever</div>
       </div>
@@ -484,12 +485,12 @@ footer .legal{margin-top:30px;font-style:italic;line-height:1.7;color:#7C8A78}
 </div>
 
 <script>
-// Launch countdown: ends Sunday 23:59:59 local, auto-renews weekly
-function nextSunday(){const d=new Date();d.setHours(23,59,59,0);const day=d.getDay();if(day===0&&new Date().getHours()<23){}else{d.setDate(d.getDate()+((7-day)%7||7));}return d;}
-let end=nextSunday();
+// Launch countdown: 2-hour window, restarts on expiry
+const CYCLE_MS=2*3600000;
+let end=new Date(Date.now()+CYCLE_MS);
 function tick(){
   let ms=end-new Date();
-  if(ms<0){end=nextSunday();ms=end-new Date();}
+  if(ms<0){end=new Date(Date.now()+CYCLE_MS);ms=end-new Date();}
   const h=String(Math.floor(ms/3600000)).padStart(2,'0');
   const m=String(Math.floor(ms%3600000/60000)).padStart(2,'0');
   const s=String(Math.floor(ms%60000/1000)).padStart(2,'0');
