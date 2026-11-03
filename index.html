@@ -198,7 +198,7 @@ footer .legal{margin-top:30px;font-style:italic;line-height:1.7;color:#7C8A78}
 <!-- MASTHEAD -->
 <div class="masthead">
   <span>EMERALD TRIANGLE &middot; EST. 1977</span>
-  <span class="count">LAUNCH PRICE ENDS IN <span id="countdown">--:--:--</span></span>
+  <span class="count">THE OLD-TIMER'S HOME GROW MANUAL &middot; $47</span>
   <span class="right">A GROWER'S MANUAL &middot; NO. I</span>
 </div>
 
@@ -249,7 +249,7 @@ footer .legal{margin-top:30px;font-style:italic;line-height:1.7;color:#7C8A78}
         <div class="ecap">Illustrated ebook &middot; 570+ pages &middot; 2026</div>
         <p class="body">Every step from seed to jar, the way it was done before the shelves existed: law and timeline, the kit, soil, water, feeding, environment, training, flowering, harvest, dry and cure, problems and pests. Every method carries the materials list, 2026 prices, step-by-step instructions, a dated note from Hank's own notebooks, and <em>the honest part</em> — what the method does and does not do. Start this weekend with a $10 thermometer and a bag of soil.</p>
         <div class="price-line"><span class="price-now">$47</span><span class="price-was">$77</span></div>
-        <span class="launch">Launch price — ends Sunday</span>
+        <span class="launch">Launch price: $47 (regular $77)</span>
         <table class="stack">
           <tr><td>The Old-Timer's Home Grow Manual<span class="d">101 methods · seed to jar · illustrated</span></td><td>$47</td></tr>
           <tr><td>The First-Weekend Road Map<span class="d">the three cheap fixes to make before anything else</span></td><td>$19</td></tr>
@@ -485,18 +485,7 @@ footer .legal{margin-top:30px;font-style:italic;line-height:1.7;color:#7C8A78}
 </div>
 
 <script>
-// Launch countdown: 2-hour window, restarts on expiry
-const CYCLE_MS=2*3600000;
-let end=new Date(Date.now()+CYCLE_MS);
-function tick(){
-  let ms=end-new Date();
-  if(ms<0){end=new Date(Date.now()+CYCLE_MS);ms=end-new Date();}
-  const h=String(Math.floor(ms/3600000)).padStart(2,'0');
-  const m=String(Math.floor(ms%3600000/60000)).padStart(2,'0');
-  const s=String(Math.floor(ms%60000/1000)).padStart(2,'0');
-  document.getElementById('countdown').textContent=h+':'+m+':'+s;
-}
-tick();setInterval(tick,1000);
+// ===== EXIT-INTENT MODAL (once per visitor per session; needs 45s dwell) =====
 
 // ===== EXIT-INTENT MODAL (once per visitor per session; needs 45s dwell) =====
 (function(){
